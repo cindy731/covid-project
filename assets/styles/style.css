@@ -1,0 +1,804 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #101357;
+  margin: 0;
+}
+      /* FONTS: 400 regular, 600 semi-bold, 700 bold*/
+                        /* NAV BAR */
+
+nav {
+  width: 100%;
+  background: #101357;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+nav a {
+  display: block;
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: white;
+  text-decoration: none;
+  padding: 20px 20px 20px 20px;
+}
+
+nav a:hover {
+  background-color: gray;
+}
+
+#logo {
+  background-image: url(../images/logo.png);
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  margin: 3px;
+  width: 150px;
+  height: 40px;
+}
+                            /* FIRST PAGE */
+h1 {
+  color: white;
+  font-size: 100px;
+  letter-spacing: 7px;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  text-align: center;
+  top: 250px;
+  z-index: 1;
+}
+
+#virus-div {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  z-index: 0;
+}
+
+#intro-navbutton {
+  background: #FFD875;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: none;
+  padding: 18px 32px;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+                      /*FIRST PAGE ANIMATIONS*/
+#virus1:hover,
+#virus2:hover,
+#virus3:hover,
+#virus4:hover,
+#virus5:hover,
+#virus6:hover,
+#virus7:hover,
+#virus8:hover,
+#virus9:hover {
+  animation: virus-interaction 2s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes virus-interaction {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+                            /* SECOND PAGE */
+
+#facts-holder {
+  width: 50px;
+  height: 50px;
+  background: #101357;
+  position: absolute;
+  top: 900px;
+}
+
+#facts-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #FFD875;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 920px;
+  text-align: center;
+  width: 100%;
+}
+
+#facts-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 1025px;
+  text-align: center;
+  width: 100%;
+}
+
+                      /* SECOND PAGE - PUZZLE*/
+
+#puzzle-image {
+  background-image: url(../images/puzzles/puzzle-image.jpg);
+  width: 391px;
+  height: 261px;
+  border-radius: 5px;
+  position: absolute;
+  left: 566px;
+  top: 1195px;
+  z-index: -3;
+}
+
+#puzzles-div {
+  position: absolute;
+  left: 490px;
+  top: 1150px;
+  z-index: -1;
+}
+
+#secondpage-navbutton {
+  background: #FFD875;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  text-decoration: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  top: 1500px;
+  left: 1350px;
+}
+
+#handsanitizer-icon {
+  background-image: url(../images/puzzleIcons/handsanitizer-icon.png);
+  width: 19px;
+  height: 36px;
+  position: absolute;
+  top: 1522px;
+  left: 1386px;
+  animation: handsanitizer-jump 0.4s ease-in infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#handsanitizer-text {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-decoration: none;
+  position: absolute;
+  top: 1540px;
+  left: 1373px;
+}
+
+                      /* SECOND PAGE - PUZZLE ANIMATION*/
+
+@keyframes handsanitizer-jump {
+  0% {
+    transform: scale(.9,1.1) translateY(-10px);
+  }
+  100% {
+    transform: scale(1.1,.9) translateY(0);
+  }
+}
+
+                      /* SECOND PAGE - PUZZLE TEXT*/
+
+.hidden {
+  display: none;
+}
+
+#what-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FF4757;
+  letter-spacing: 1.5px;
+  left: 320px;
+  top: 1145px;
+  position: absolute;
+  margin: 0;
+}
+
+#what-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 320px;
+  top: 1155px;
+  position: absolute;
+  width: 200px;
+  line-height: 1.5;
+}
+
+#what-icon {
+  background-image: url(../images/puzzleIcons/what-icon.png);
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 240px;
+  top: 1155px;
+}
+
+#symptoms-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FEA49F;
+  letter-spacing: 1.5px;
+  left: 1050px;
+  top: 1135px;
+  position: absolute;
+  width: 100px;
+  margin: 0;
+}
+
+#symptoms-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1145px;
+  position: absolute;
+  width: 250px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#symptoms-list {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1195px;
+  position: absolute;
+  width: 250px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#symptoms-text2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1240px;
+  position: absolute;
+  width: 250px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#symptoms-list2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1270px;
+  position: absolute;
+  width: 250px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#symptoms-icon {
+  background-image: url(../images/puzzleIcons/symptoms-icon.png);
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 980px;
+  top: 1200px;
+}
+
+#risk-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FF4757;
+  letter-spacing: 1.5px;
+  left: 1050px;
+  top: 1300px;
+  position: absolute;
+  margin: 0;
+}
+
+#risk-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1310px;
+  position: absolute;
+  width: 250px;
+  line-height: 1.5;
+}
+
+#risk-list {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1360px;
+  position: absolute;
+  width: 250px;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+#risk-icon {
+  background-image: url(../images/puzzleIcons/risk-icon.png);
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 1330px;
+  top: 1350px;
+}
+
+
+#how-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FF4757;
+  letter-spacing: 1.5px;
+  left: 550px;
+  top: 1480px;
+  position: absolute;
+  margin: 0;
+}
+
+#how-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 550px;
+  top: 1490px;
+  position: absolute;
+  width: 250px;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+#how-icon {
+  background-image: url(../images/puzzleIcons/how-icon.png);
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 470px;
+  top: 1500px;
+}
+
+#global-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FEA49F;
+  letter-spacing: 1.5px;
+  left: 1050px;
+  top: 1445px;
+  position: absolute;
+  margin: 0;
+}
+
+#global-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1455px;
+  position: absolute;
+  width: 250px;
+  line-height: 1.5;
+}
+
+#global-list {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1490px;
+  position: absolute;
+  width: 250px;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+#global-text2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1050px;
+  top: 1550px;
+  position: absolute;
+  width: 250px;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+#global-icon {
+  background-image: url(../images/puzzleIcons/global-icon.png);
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 980px;
+  top: 1490px;
+}
+
+#protect-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FEA49F;
+  letter-spacing: 1.5px;
+  left: 200px;
+  top: 1280px;
+  position: absolute;
+  margin: 0;
+}
+
+#protect-list {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 200px;
+  top: 1290px;
+  position: absolute;
+  width: 250px;
+  line-height: 1.5;
+}
+
+#protect-icon {
+  background-image: url(../images/puzzleIcons/protect-icon.png);
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 140px;
+  top: 1380px;
+}
+
+                            /* THIRD PAGE */
+#timeline-holder {
+width: 50px;
+height: 50px;
+background: #101357;
+position: absolute;
+top: 1600px;
+}
+
+#timeline-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #FFD875;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 1620px;
+  text-align: center;
+  width: 100%;
+}
+
+#timeline-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 1725px;
+  text-align: center;
+  width: 100%;
+}
+
+                            /* THIRD PAGE - Timeline */
+#timeline-image {
+  position: absolute;
+  top: 1900px;
+  left: 100px;
+  margin-bottom: 200px;
+}
+
+                        /* THIRD PAGE - Timeline Text */
+
+#dec13-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFE897;
+  letter-spacing: 1.5px;
+  left: 100px;
+  top: 2125px;
+  position: absolute;
+  margin: 0;
+}
+
+#dec13-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 100px;
+  top: 2135px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#jan11-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FEA49F;
+  letter-spacing: 1.5px;
+  left: 200px;
+  top: 1935px;
+  position: absolute;
+  margin: 0;
+}
+
+#jan11-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 200px;
+  top: 1945px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#jan20-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FEA49F;
+  letter-spacing: 1.5px;
+  left: 390px;
+  top: 2136px;
+  position: absolute;
+  margin: 0;
+}
+
+#jan20-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 390px;
+  top: 2146px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#jan30-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FEA49F;
+  letter-spacing: 1.5px;
+  left: 440px;
+  top: 1830px;
+  position: absolute;
+  margin: 0;
+}
+
+#jan30-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 440px;
+  top: 1840px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#feb2-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #00A0A0;
+  letter-spacing: 1.5px;
+  left: 620px;
+  top: 2190px;
+  position: absolute;
+  margin: 0;
+}
+
+#feb2-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 620px;
+  top: 2200px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#feb5-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #00A0A0;
+  letter-spacing: 1.5px;
+  left: 640px;
+  top: 1910px;
+  position: absolute;
+  margin: 0;
+}
+
+#feb5-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 640px;
+  top: 1920px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#feb7-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #00A0A0;
+  letter-spacing: 1.5px;
+  left: 820px;
+  top: 2100px;
+  position: absolute;
+  margin: 0;
+}
+
+#feb7-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 820px;
+  top: 2110px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#feb29-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #00A0A0;
+  letter-spacing: 1.5px;
+  left: 940px;
+  top: 1890px;
+  position: absolute;
+  margin: 0;
+}
+
+#feb29-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 940px;
+  top: 1900px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#march27-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FF4757;
+  letter-spacing: 1.5px;
+  left: 1100px;
+  top: 2190px;
+  position: absolute;
+  margin: 0;
+}
+
+#march27-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1100px;
+  top: 2200px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
+
+#april2-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #007F4F;
+  letter-spacing: 1.5px;
+  left: 1250px;
+  top: 1945px;
+  position: absolute;
+  margin: 0;
+}
+
+#april2-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1.3px;
+  left: 1250px;
+  top: 1955px;
+  position: absolute;
+  width: 220px;
+  line-height: 1.5;
+}
